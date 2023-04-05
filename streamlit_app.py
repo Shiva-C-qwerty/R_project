@@ -16,7 +16,6 @@ The main technologies used in this app are:
 st.subheader('Give your image as input')
 file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
-cmd = ['Rscript', 'helloWorld.R', "helloWorld.R"]
-process1 = subprocess.check_output(cmd)
+process1 = subprocess.Popen(["Rscript", "helloWorld.R"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 result1 = process1.communicate()
 st.write(result1)
