@@ -1,13 +1,6 @@
 pytesseract
 pdf2image
-PIL
-pandas
 transformers
-matplotlib.pyplot
 seaborn
 wordcloud
 collections
-tempfile
-re
-os
-streamlit
